@@ -1,0 +1,11 @@
+database:
+  player:
+    driver: "mysql"
+    write: "root:12345678@tcp(127.0.0.1:3366)/gratisan?charset=utf8&parseTime=true&loc=Local"
+    read: "root:12345678@tcp(127.0.0.1:3366)/gratisan?charset=utf8&parseTime=true&loc=Local"
+    max_idle: 20
+    max_cons: 20
+
+sentry:
+  dsn : "https://fd8e6dd8bbb049f0ab791ffd6348686a:bbf42a83cf214205b6d6f79bd543cae3@sentry.io/299818"
+  timeout : 20

@@ -1,0 +1,6 @@
+
+.DS_Store
+vendor/
+my-app
+.app-config.yaml
+Gopkg.lock
