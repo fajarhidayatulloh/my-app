@@ -27,7 +27,7 @@ func (r *Route) Init() *mux.Router {
 	//User
 	v1.HandleFunc("/users/store", usersController.StoreUser).Methods("POST")
 	v1.HandleFunc("/users", usersController.GetUsers).Methods("GET")
-	v1.HandleFunc("/users/detail/{id}", usersController.GetUserByID).Methods("GET")
+	v1.HandleFunc("/users/profile/{id}", usersController.GetUserByID).Methods("GET")
 
 	//product
 	v1.HandleFunc("/product", productController.ProductList).Methods("GET")

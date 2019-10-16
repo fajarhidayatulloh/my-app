@@ -9,17 +9,19 @@ import (
 	"gitlab.com/my-app/models"
 )
 
+// IProductRepository init
 type IProductRepository interface {
 	StoreProduct(data models.Product) (models.Product, error)
 	ProductList() ([]models.Product, error)
 	GetProductByID(int) (models.Product, error)
 }
 
+// ProductRepository behaviour
 type ProductRepository struct {
 	DB infrastructures.ISQLConnection
 }
 
-//store product
+// StoreProduct is
 func (r *ProductRepository) StoreProduct(data models.Product) (models.Product, error) {
 	db := r.DB.GetPlayerWriteDb()
 	defer db.Close()
@@ -55,7 +57,7 @@ func (r *ProductRepository) StoreProduct(data models.Product) (models.Product, e
 	return data, err
 }
 
-//list product
+// ProductList is
 func (r *ProductRepository) ProductList() (products []models.Product, err error) {
 	db := r.DB.GetPlayerWriteDb()
 	defer db.Close()
@@ -95,8 +97,7 @@ func (r *ProductRepository) ProductList() (products []models.Product, err error)
 	return
 }
 
-//product by id
-
+// GetProductByID is
 func (r *ProductRepository) GetProductByID(ID int) (product models.Product, err error) {
 	db := r.DB.GetPlayerWriteDb()
 	defer db.Close()

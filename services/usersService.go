@@ -32,6 +32,8 @@ func (r *UsersService) StoreUser(data models.UserInput) (result models.Users, er
 	user.Email = data.Email
 	user.Name = data.Name
 	user.Password = data.Password
+	user.Phone = data.Phone
+	user.Status = data.Status
 	result, err = r.UsersRepository.StoreUser(user)
 	return
 }

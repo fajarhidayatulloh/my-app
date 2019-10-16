@@ -50,6 +50,7 @@ func (r *UsersController) StoreUser(res http.ResponseWriter, req *http.Request) 
 		"email":    []string{"required", "email"},
 		"name":     []string{"required"},
 		"password": []string{"required"},
+		"phone":    []string{"required"},
 	}
 
 	opts := govalidator.Options{
@@ -85,8 +86,7 @@ func (r *UsersController) StoreUser(res http.ResponseWriter, req *http.Request) 
 		return
 	}
 	resp := map[string]interface{}{
-		"message": "created.",
-		"data":    result,
+		"data": result,
 	}
 	helpers.Response(res, http.StatusCreated, resp)
 	return

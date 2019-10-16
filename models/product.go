@@ -2,6 +2,7 @@ package models
 
 import "time"
 
+// Product struct
 type Product struct {
 	ID          int       `db:"id" json:"id"`
 	Name        string    `db:"name" json:"name"`
@@ -16,6 +17,7 @@ type Product struct {
 	CreatedAt   time.Time `db:"created_at" json:"created_at"`
 }
 
+// ProductInput struct
 type ProductInput struct {
 	Name        string    `json:"name" validate:"required"`
 	Sku         string    `json:"sku" validate:"required"`
@@ -26,5 +28,5 @@ type ProductInput struct {
 	RedeemStamp int       `json:"redeem_stamp" validate:"required"`
 	Status      string    `json:"status" validate:"required"`
 	MerchantID  int       `json:"merchant_id" validate:"required"`
-	CreatedAt   time.Time `json:"created_at""`
+	CreatedAt   time.Time `json:"created_at"`
 }
