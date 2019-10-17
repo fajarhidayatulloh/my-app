@@ -1,8 +1,8 @@
 package services
 
 import (
-	"gitlab.com/my-app/models"
-	"gitlab.com/my-app/repositories"
+	"github.com/my-app/models"
+	"github.com/my-app/repositories"
 )
 
 // IPlayerService is

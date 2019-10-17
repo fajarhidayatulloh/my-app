@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"gitlab.com/my-app/helpers"
+	"github.com/my-app/helpers"
 )
 
 // InitHealthCheckController is

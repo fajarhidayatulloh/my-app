@@ -5,11 +5,11 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"gitlab.com/my-app/helpers"
-	"gitlab.com/my-app/infrastructures"
-	"gitlab.com/my-app/models"
-	"gitlab.com/my-app/repositories"
-	"gitlab.com/my-app/services"
+	"github.com/my-app/helpers"
+	"github.com/my-app/infrastructures"
+	"github.com/my-app/models"
+	"github.com/my-app/repositories"
+	"github.com/my-app/services"
 )
 
 // InitPlayerController is

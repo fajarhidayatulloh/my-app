@@ -4,9 +4,9 @@ import (
 
 	//"github.com/afex/hystrix-go/hystrix"
 
+	"github.com/my-app/infrastructures"
+	"github.com/my-app/models"
 	log "github.com/sirupsen/logrus"
-	"gitlab.com/my-app/infrastructures"
-	"gitlab.com/my-app/models"
 )
 
 // IPlayerRepository is

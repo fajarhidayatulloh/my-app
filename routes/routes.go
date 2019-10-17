@@ -3,7 +3,7 @@ package routes
 
 import (
 	"github.com/gorilla/mux"
-	"gitlab.com/my-app/controllers"
+	"github.com/my-app/controllers"
 )
 
 // Route is

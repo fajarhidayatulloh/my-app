@@ -18,8 +18,8 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/my-app/routes"
 	"github.com/spf13/cobra"
-	"gitlab.com/my-app/routes"
 )
 
 // serveHTTPCmd represents the serveHttp command

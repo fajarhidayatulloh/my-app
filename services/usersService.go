@@ -1,10 +1,10 @@
 package services
 
 import (
-	"gitlab.com/my-app/infrastructures"
+	"github.com/my-app/infrastructures"
 
-	"gitlab.com/my-app/models"
-	"gitlab.com/my-app/repositories"
+	"github.com/my-app/models"
+	"github.com/my-app/repositories"
 )
 
 type IUsersService interface {
