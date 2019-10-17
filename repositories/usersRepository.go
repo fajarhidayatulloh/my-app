@@ -54,7 +54,7 @@ func (r *UsersRepository) GetUsers() (users []models.Users, err error) {
 	defer db.Close()
 
 	//client := models.Users{}
-	rows, err := db.Query(`SELECT id,email,name,phone,status FROM users`)
+	rows, err := db.Query(`SELECT id,name,email,phone,status FROM users`)
 
 	if err == sql.ErrNoRows {
 		err = nil
@@ -86,7 +86,7 @@ func (r *UsersRepository) GetUserByID(ID int) (user models.Users, err error) {
 	db := r.DB.GetPlayerWriteDb()
 	defer db.Close()
 
-	row := db.QueryRow(`SELECT id,email,name,phone,status FROM users WHERE id = ?`, ID)
+	row := db.QueryRow(`SELECT id,name,email,phone,status FROM users WHERE id = ?`, ID)
 
 	err = row.Scan(
 		&user.ID,
