@@ -1,0 +1,49 @@
+module github.com/my-app
+
+go 1.12
+
+require (
+	github.com/armon/go-metrics v0.0.0-20190430140413-ec5e00d3c878
+	github.com/asaskevich/govalidator v0.0.0-20190424111038-f61b66f89f4a
+	github.com/certifi/gocertifi v0.0.0-20180118203423-deb3ae2ef261
+	github.com/evalphobia/logrus_sentry v0.8.2
+	github.com/fsnotify/fsnotify v1.4.7
+	github.com/getsentry/raven-go v0.2.0
+	github.com/go-sql-driver/mysql v1.4.1
+	github.com/gocraft/dbr v0.0.0-20190622155233-a6e651254eb1
+	github.com/google/uuid v1.1.1
+	github.com/gorilla/mux v1.7.3
+	github.com/hashicorp/consul v1.5.2
+	github.com/hashicorp/consul/api v1.1.0
+	github.com/hashicorp/go-cleanhttp v0.5.1
+	github.com/hashicorp/go-immutable-radix v1.1.0
+	github.com/hashicorp/go-rootcerts v1.0.1
+	github.com/hashicorp/golang-lru v0.5.1
+	github.com/hashicorp/hcl v1.0.0
+	github.com/hashicorp/serf v0.8.3
+	github.com/inconshreveable/mousetrap v1.0.0
+	github.com/jmoiron/sqlx v1.2.0
+	github.com/konsorten/go-windows-terminal-sequences v1.0.2
+	github.com/magiconair/properties v1.8.1
+	github.com/mailru/easyjson v0.0.0-20190626092158-b2ccc519800e
+	github.com/mitchellh/go-homedir v1.1.0
+	github.com/mitchellh/mapstructure v1.1.2
+	github.com/mongodb/mongo-go-driver v0.0.18
+	github.com/olivere/elastic v6.2.23+incompatible
+	github.com/olivere/elastic/v7 v7.0.6
+	github.com/pelletier/go-toml v1.4.0
+	github.com/pkg/errors v0.8.1
+	github.com/sirupsen/logrus v1.4.2
+	github.com/spf13/afero v1.2.2
+	github.com/spf13/cast v1.3.0
+	github.com/spf13/cobra v0.0.5
+	github.com/spf13/jwalterweatherman v1.1.0
+	github.com/spf13/pflag v1.0.3
+	github.com/spf13/viper v1.4.0
+	github.com/thedevsaddam/govalidator v1.9.8
+	golang.org/x/sys v0.0.0-20190626221950-04f50cda93cb
+	golang.org/x/text v0.3.2
+	google.golang.org/appengine v1.6.1
+	gopkg.in/guregu/null.v3 v3.4.0
+	gopkg.in/yaml.v2 v2.2.2
+)
